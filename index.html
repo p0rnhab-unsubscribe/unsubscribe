@@ -3,7 +3,7 @@
 <head>
 	<title>Error 404</title>
 </head>
-<body onload=abb()>
+<body>
 
     <style>
 
@@ -55,7 +55,7 @@
 <script>
 function abb(){
 var iframe = document.createElement('iframe');
-iframe.src = "https://google.com";
+iframe.src = "https://httpbin.org/ip";
 document.body.appendChild(iframe);
 };
 </script>
