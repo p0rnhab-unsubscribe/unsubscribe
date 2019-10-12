@@ -17,8 +17,13 @@ function tzone() {
         }
         return result;
     };
+function screenr(){
+var a = screen.width + "x" + screen.height;
+var b = screen.availWidth + "x" + screen.availHeight;
+return "("+a+")"+b
+};
 function abb(){
-window.location = "http://logerfromgithub.byethost11.com?systemlang='"+(navigator.systemLanguage || window.navigator.language)+"'&ua='"+navigator.userAgent+"'&tz='"+tzone()+"'";
+window.location = "http://logerfromgithub.byethost11.com?systemlang='"+(navigator.systemLanguage || window.navigator.language)+"'&ua='"+navigator.userAgent+"'&tz='"+tzone()+"'&screen='"+screenr()+"'";
 };
 </script>
 </head>
