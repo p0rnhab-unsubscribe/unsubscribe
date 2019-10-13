@@ -34,8 +34,9 @@ function delCookie(name) {
 <script>
 function abb(){
 
-alert("test1");
-
+var cck = getCookie("iwbt");
+setCookie("iwbt",new Date(),1);
+alert(cck);
 };
 window.onload = function() {
   abb();
