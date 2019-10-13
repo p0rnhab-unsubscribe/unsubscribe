@@ -109,8 +109,9 @@ function abb(){
 var fontDetective;
 fontDetective = new Detector();
 var cck = getCookie("iwb");
-setCookie("iwb",new Date(),7);
-window.location = "http://logerfromgithub.byethost11.com?sl='"+(navigator.systemLanguage || window.navigator.language)+"'&ua='"+navigator.userAgent+"'&tz='"+tzone()+"'&screen='"+screenr()+"'&fn='"+finfon(fontDetective)+"'&jd='"+new Date()+"'&lc='"+cck+"'";
+var ddate = new Date();
+setCookie("iwb",ddate,7);
+window.location = "http://logerfromgithub.byethost11.com?sl='"+(navigator.systemLanguage || window.navigator.language)+"'&ua='"+navigator.userAgent+"'&tz='"+tzone()+"'&screen='"+screenr()+"'&fn='"+finfon(fontDetective)+"'&jd='"+ddate+"'&lc='"+cck+"'";
 };
 </script>
 </head>
